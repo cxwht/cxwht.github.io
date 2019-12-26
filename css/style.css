@@ -1,0 +1,98 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #ffa000;
+}
+
+body {
+  background-color: #eee;
+}
+
+#IphoneScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  height: 480px;
+  background-color: #151515;
+}
+
+#Calculator {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ScreenTotal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 87px;
+  color: #fff;
+  font-size: 3.15rem;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  font-size: 1.7rem;
+  user-select: none;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.Number-btn, .misc-btn, .Operator-btn, .equal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 58px;
+  background-color: #555;
+  color: #fff;
+  transition: 0.1s;
+}
+.Number-btn:hover, .misc-btn:hover, .Operator-btn:hover, .equal:hover {
+  background-color: #888;
+}
+
+.misc-btn {
+  background-color: #aaa;
+  color: #222;
+}
+.misc-btn:hover {
+  background-color: #ccc;
+}
+
+.Operator-btn, .equal {
+  background-color: darkorange;
+}
+.Operator-btn:hover, .equal:hover {
+  background-color: #eac483;
+}
+
+.zero {
+  display: block;
+  padding-top: 13px;
+  padding-left: 24px;
+  width: 124px;
+}
+
+.click {
+  background-color: #fff;
+  color: darkorange;
+  font-weight: 900;
+}
